@@ -4,12 +4,15 @@ import './index.less';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import BasicLayout from './layout/Layout';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <BasicLayout />
-  </React.StrictMode>
+  <BrowserRouter>
+    <React.StrictMode>
+      <BasicLayout />
+    </React.StrictMode>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
